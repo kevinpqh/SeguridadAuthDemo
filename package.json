@@ -1,13 +1,15 @@
 {
-  "name": "SeguridadAuthDemo",
+  "name": "seguridad-auth-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "simple api seguridad",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node src/index.js"
+    "dev": "nodemon src/index.js --exec babel-node",
+    "build": "babel src --out-dir build",
+    "start": "node build/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "kevinpqh",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",

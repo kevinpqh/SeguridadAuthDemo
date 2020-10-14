@@ -1,6 +1,8 @@
-import express from 'express';
+const { default: app } = require("./apps")
 
-const app = express();
+import apps from './apps';
+import "./database";
 
-app.listen(3000)
-console.log('server listen on port',3000)
+apps.listen(4000)
+
+console.log('server listen on port',4000);
